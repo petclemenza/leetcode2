@@ -168,6 +168,7 @@ class ST2D {
         s += sum_y(
             {node.x, {node.y.index * 2 + 1, middle + 1, node.y.right}},
             x_left, x_right, std::max<size_t>(middle + 1, y_left), y_right);
+
         return s;
     }
 
@@ -192,6 +193,7 @@ class ST2D {
             {{node.x.index * 2 + 1, middle + 1, node.x.right}, node.y},
             std::max<size_t>(middle + 1, x_left), x_right, y_left, y_right
             );
+
         return s;
     }
 
